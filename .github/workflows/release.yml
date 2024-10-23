@@ -69,7 +69,7 @@ jobs:
           node-version: 20.x
 
       - name: "🔧 install npm@latest"
-        run: npm i -g npm@latest
+        run: npm i -g npm@10.9.0
 
       - name: "📦 install dependencies"
         uses: bahmutov/npm-install@v1
