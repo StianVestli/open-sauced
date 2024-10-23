@@ -24,7 +24,7 @@ jobs:
           node-version: 20.x
 
       - name: "🔧 install npm@latest"
-        run: npm i -g npm@latest
+        run: npm i npm@latest
 
       - name: "📦 install dependencies"
         uses: bahmutov/npm-install@v1
@@ -38,15 +38,15 @@ jobs:
     timeout-minutes: 10
     steps:
       - name: "☁️ checkout repository"
-        uses: actions/checkout@v4
+        uses: actions/checkout@v2
 
       - name: "🔧 setup node"
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v3
         with:
           node-version: 20.x
 
       - name: "🔧 install npm@latest"
-        run: npm i -g npm@latest
+        run: npm i npm@latest
 
       - name: "📦 install dependencies"
         uses: bahmutov/npm-install@v1
